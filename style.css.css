@@ -1,0 +1,92 @@
+body {
+  text-align: center;
+  font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+  background-color: var(--base-color);
+  color: var(--text-color);
+}
+
+:root {
+  --base-color: white;
+  --base-variant: #999;
+  --text-color: black;
+--primary-color: rgb(132, 114, 235);
+}
+
+.trybciemny {
+  --base-color: black;
+  --base-variant: #333;
+  --text-color: white;
+  --primary-color: rgb(132, 114, 235);
+}
+
+.trybjasny {
+  --base-color: white;
+  --base-variant: #ddd;
+  --text-color: black;
+--primary-color: rgb(132, 114, 235);
+}
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px;
+  font-weight: bold;
+  background-color: var(--base-variant);
+  color: var(--text-color);
+}
+
+img {
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#film {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#plakat {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+}
+
+#tekst {
+  max-width: 300px;
+  text-align: left;
+}
+
+
+#theme-switch{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--base-variant);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#theme-switch svg{
+  fill: var(--primary-color);
+  width: 24px;
+  height: 24px;
+}
+#theme-switch svg:last-child{
+    display: none;
+
+}
+.trybciemny #theme-switch svg:first-child{
+    display: none;
+}
+.trybciemny #theme-switch svg:last-child{
+    display: block;
+
+}
